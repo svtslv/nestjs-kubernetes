@@ -25,19 +25,19 @@ cd nestjs-kubernetes
 
 ### Create namespace and volume
 
-1. Add local-path-provisioner
+- Add local-path-provisioner
 
 ```sh
 kubectl -f kubernetes/_local-path-provisioner.yaml
 ```
 
-2. Create nestjs-kubernetes-namespace
+- Create nestjs-kubernetes-namespace
 
 ```sh
 kubectl -f kubernetes/01-namespaces.yaml
 ```
 
-3. Create nestjs-kubernetes-volume
+- Create nestjs-kubernetes-volume
 
 ```sh
 kubectl -f kubernetes/02-volumes.yaml
