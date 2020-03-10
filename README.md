@@ -40,7 +40,7 @@ kubectl -f kubernetes/01-namespaces.yaml
 3. Create nestjs-kubernetes-volume
 
 ```sh
-kubectl -f kubernetes/01-volumes.yaml
+kubectl -f kubernetes/02-volumes.yaml
 ```
 
 ### Run on local kubernetes
