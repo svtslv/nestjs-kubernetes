@@ -49,7 +49,7 @@ kubectl -f kubernetes/02-volumes.yaml
 skaffold dev --port-forward
 ```
 
-### Remote on remote kubernetes
+### Run on remote kubernetes
 
 - Update `stringData..dockerconfigjson` -> `kubernetes/03-secrets.yaml`
 - Update `...template.containers.image` -> `registry.gitlab.com/USERNAME/PROJECT/dev-nestjs`
