@@ -52,8 +52,8 @@ skaffold dev --port-forward
 ### Run on remote kubernetes
 
 - Update `stringData..dockerconfigjson` -> `kubernetes/03-secrets.yaml`
-- Update `...template.containers.image` -> `registry.gitlab.com/USERNAME/PROJECT/dev-nestjs`
-- Update `build.artifacts.-image` -> `.registry.gitlab.com/USERNAME/PROJECT/dev-nestjs`
+- Update `...template.containers.image` -> `kubernetes/08-nestjs.yaml`
+- Update `build.artifacts.-image` -> `skaffold.yaml`
 
 ```sh
 skaffold dev --port-forward
