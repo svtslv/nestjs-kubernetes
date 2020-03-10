@@ -1,0 +1,38 @@
+apiVersion: v1
+kind: Service
+metadata:
+  namespace: nestjs-kubernetes-namespace
+  name: nestjs-service
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 3000
+      targetPort: 3000
+  selector:
+    app: nestjs
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: nestjs-kubernetes-namespace
+  name: nestjs-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nestjs
+  template:
+    metadata:
+      labels:
+        app: nestjs
+    spec:
+      imagePullSecrets:
+        - name: registry-secret
+      containers:
+        - name: nestjs
+          image: registry.gitlab.com/svtslv/public/dev-nestjs
+          ports:
+            - containerPort: 3000
+          envFrom:
+            - secretRef:
+                name: nestjs-kubernetes-secret
