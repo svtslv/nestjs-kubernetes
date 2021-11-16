@@ -23,7 +23,7 @@
     "@nestjs/common": "^7.4.2",
     "@nestjs/core": "^7.4.2",
     "@nestjs/platform-express": "^7.4.2",
-    "aws-sdk": "^2.734.0",
+    "aws-sdk": "^2.814.0",
     "ioredis": "^4.17.3",
     "knex": "^0.21.4",
     "nestjs-knex": "^1.0.1",
