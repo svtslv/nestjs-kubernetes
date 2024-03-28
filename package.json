@@ -22,7 +22,7 @@
   "dependencies": {
     "@nestjs/common": "^7.4.2",
     "@nestjs/core": "^9.0.5",
-    "@nestjs/platform-express": "^9.2.1",
+    "@nestjs/platform-express": "^10.3.7",
     "aws-sdk": "^2.1354.0",
     "ioredis": "^4.17.3",
     "knex": "^2.4.0",
